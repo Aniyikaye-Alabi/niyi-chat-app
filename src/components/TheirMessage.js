@@ -5,7 +5,7 @@ const TheirMessage = ({ lastMessage, message }) => {
     return (
         <div className='message-row'>
             {isFirstMessageByUser && (
-                <div className='message-avatar' style={{backgroundImage: `url(${message && message.sender.avatar})`}} />
+                <div className='message-avatar' style={{backgroundImage: `url(${message?.sender?.avatar})`}} />
             )}
             {
             message.attachments.length > 0 ?
